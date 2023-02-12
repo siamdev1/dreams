@@ -1,0 +1,497 @@
+/* bootstrap icon css */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+/* bootstrap icon css */
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;900&display=swap');
+/* google fonts */
+:root{
+    --ffamily1:'Montserrat', sans-serif;
+    --ffamily2:'Noto Sans', sans-serif;
+    --fcolor1: #222222;
+    --fcolor2: #777777;
+}
+@font-face {
+    font-family: bellofont;
+    src: url(../fonts/FontsFree-Net-Bello-Script.ttf);
+  }  
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_area{
+    width: 100%;
+    height: 645px;
+    /* background:url(../img/BG.jpg) #35b9eb; */
+    background-image: url(../img/header/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* .header_area .navbar{
+    padding-top: 40px;
+    position: fixed;
+}
+ */
+
+.header_area .navbar-brand{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: 'bellofont', sans-serif;
+}
+.header_area .navbar-brand:hover{
+    color: #f1f1f1;
+}
+.header_area .nav-item a{
+    color: #ffffff;
+    font-family: var(--ffamily1);
+    font-weight: 400;
+}
+.header_area .nav-item a:hover{
+    color: #ffffff;
+}
+
+.nav-link{
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 30px !important;
+}
+
+.bgcolor.scrolled{
+    background-color: rgba(0,0,0, 0.628);
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover Under line animation Start */
+.header_area .nav-link{
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    overflow: hidden !important;
+  }
+.header_area .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.header_area .nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  
+  }
+  /* Hover Under line animation END */
+
+.header_con{
+    /* margin-top: 150px; */
+    padding-top: 170px;
+}
+.header_title h1{
+    color: #ffffff;
+    font-family: var(--ffamily1);
+    font-weight: bold;
+    font-size: 50px;
+    text-transform:uppercase;
+    margin-bottom: 45px;
+}
+.divider {
+    height: 2px;
+    width: 100px;
+    background: #35b9eb;
+    display: block;
+    margin: auto;
+}
+.header_descripcation p{
+    margin-top: 45px;
+    font-size: 20px;
+    font-family: var(--ffamily2);
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing:0.1em;
+}
+
+/* Service Area Start */
+.service-section{
+    margin: 100px 0;
+}
+.service-header h1{
+    font-family: var(--ffamily1);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* margin-top: 100px; */
+    margin-bottom: 42px;
+}
+.service-section .row{ margin-top: 80px;}
+.service-section .card{
+    padding: 15px;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    transition: all .3s;
+ }
+.service-image img {
+    margin: 5px 0 40px 0;
+    width: 60px;
+    height: auto;
+}
+.service-image img:hover{
+    transform: rotateY(360deg);
+}
+.service-title h2{
+    font-family: var(--ffamily1);
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s  ease-in;
+    text-align: center !important;
+}
+.service-des p{
+    font-family: var(--ffamily2);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+        
+}
+
+/* Service Area END */
+
+/*Expertise area start  */
+.s-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-left: 50px;
+}
+/* .expeart-image{
+
+} */
+.expert-area{
+    background: #f7f7f7;
+}
+.expert-area .container{
+    background: #f7f7f7;
+}
+.oex_title h1{
+    text-transform: uppercase;
+    font-size: 40;
+    font-family: var(--ffamily1);
+    color:var(--fcolor1);
+    font-weight:bold ;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.oex_des p{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: var(--ffamily2);
+    color: var(--fcolor2);
+    padding-right: 165px;
+}
+.oex_service{
+    margin-top: 60px;
+}
+.oex_service .oex_icon img{
+    width: 30px;
+    height: auto;
+}
+.oex_service  .oex_describe{
+    margin-left: 15px;
+}
+.oex_service .oex_describe h1{
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: var(--ffamily1);
+    color: var(--ffamily1);
+}
+.oex_service .oex_describe p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ffamily2);
+    color: var(--fcolor2);
+    text-align: justify;
+}
+.oex_btn button{
+    color: var(--fcolor1);
+    width: 160px;
+    height: 60px;
+    font-family: var(--ffamily1);
+    font-size: 16px;
+    font-weight: bold;
+    background:#ffffff;
+    border: 1px solid #ceeefa ;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+    /*Expertise area END  */
+
+    /* portfolio start */
+.port_left{
+    padding-top: 50px;
+    background-image: url(../img/portfolio/user.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+.port_title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--fcolor1);
+    color: var(--fcolor1);
+    font-weight: bold;
+    
+}
+.port_title p{
+    font-size: 16px;
+    font-family: var(--ffamily2);
+    color: var(--fcolor2);
+    text-transform: capitalize;
+    text-align: justify;
+}
+.port_catagory_icon{
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.port_catagory_icon img{
+    width: 30px;
+    height: auto;
+}
+.port_catagory_title h3{
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ffamily1);
+    color: var(--fcolor1);
+    text-transform: uppercase;
+}
+.port_catagory_title p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--ffamily2);
+    color: var(--fcolor2);
+    text-transform: capitalize;
+}
+.port_right{
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.port_right img{
+    width: 100%;
+    height: auto;
+}
+  
+    /* portfolio END */
+
+    /* About Start */
+.about_area{
+    margin-bottom: 60px;
+}
+.about_con{
+    margin-top: 50px;
+}
+.about_title{
+    margin-top: 70px;
+}
+.about_title h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--ffamily1);
+    color: var(--fcolor1) !important;
+    text-transform: uppercase;
+
+}
+.about_title_f{
+    margin-top: 70px;
+}
+.about_title_f h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--ffamily1);
+    color: #f1f1f1;
+    text-transform: uppercase;
+
+}
+
+.about_con_des h1,h2 {
+     font-size: 18px;
+     font-weight: bold;
+     font-family: var(--ffamily1);
+     color: var(--fcolor1);
+     text-transform: uppercase;
+}
+.about_con_des p{
+    font-size: 14px;
+     font-weight: 400;
+     font-family: var(--ffamily2);
+     color: var(--fcolor2);
+    padding-top: 20px;
+}
+.about_con .left{ text-align: left;} .about_con .right{text-align: right;}
+    
+
+/* About End */
+
+.teamarea{
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+
+
+.team_title h1 {
+    font-family: var(--ffamily2);
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.team_member{
+    /* border: 1px solid black; */
+    margin-top: 60px;
+}
+.team_member_profile .logo img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.team_member_profile_name h2{
+    font-family: var(--ffamily2);
+    color: var(--fcolor1);
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.team_member_profile_post h3 {
+    font-family: var(--ffamily2);
+    color: var(--fcolor2);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+.team_member_profile_icon a img{
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+.team_footer p{
+    font-family: var(--ffamily2);
+    font-size: 16px;
+    color: var(--fcolor2);
+    width: 50%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+}
+.contrat_part{
+    background: #111;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #ffffff;
+}
+.about_title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: var(--ffamily2);
+    color: #ffffff;
+    font-weight: 700;
+}
+.about_title p{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: var(--ffamily2);
+    color: #ffffff;
+    font-weight: 400;
+}
+.c-icon{
+    padding: 20px 10px;  
+}
+.c-icon a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.c-icon a:hover{
+    color: yellow;
+}
+.c-icon svg{
+   width: 30px !important;
+   height: 30px !important;
+}
+.c-icon span{
+    font-size: 18px;
+    font-family: var(--ffamily2);
+    font-weight: 400;
+    margin-left: 5px;
+    
+}
+.contrat_form input[type=text], input[type=email], textarea{
+    width: 100%;
+    height: 50px;
+    outline: 0;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.contrat_form input::placeholder, textarea::placeholder{
+    color: #bbb;
+    font-family: var(--ffamily2);
+    font-size: 16px;
+}
+.contrat_form input[type=email], input[type=text]{
+    margin-bottom: 20px;
+}
+.contrat_form textarea{
+   height: 160px;
+    width: 100%;
+    padding-top:20px ;
+    padding-left: 20px;
+}
+.contrat_form input[type=submit]{
+    width: 165px;
+    height: 50px;
+    font-family: var(--ffamily2);
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #35c2f8;
+    border-radius: 50px;
+    margin-top: 20px;
+}

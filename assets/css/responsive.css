@@ -1,0 +1,237 @@
+@media (max-width:1400px){
+    body{
+        width: 100%;
+    }
+}
+@media (min-width:1400px){
+    body{
+        width: 1400px;
+        height: auto;
+        margin: auto;
+    }
+}
+/* ===========================================================
+992px & 1100px
+======================================================== */
+@media (max-width:992px) ,(max-width:1100px){
+    .service-section {
+        margin: 35px 0;
+    }
+    .service-title h2{
+        font-size: 13px;
+        }
+    .service-des p {
+        font-size: 10px;
+    }
+    .service-section .row {
+        margin-top: 30px;
+    }
+    .s-container{
+        padding-left: 30px;
+    }
+    .oex_title h1{
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .oex_des p{
+        padding-right: 0;
+    }
+    .oex_btn button{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .expeart-image img{
+        height:-webkit-fill-available;
+    }
+    .p-container{
+        padding-left: 15px;
+    }
+    .port_right{
+        padding: 0;
+        position: relative;
+    }
+    .port_right img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+    }
+    .port_title h1 {
+        font-size: 33px
+    }
+    .port_title p{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .port_left{
+    background-size: 100%;
+    }
+    .about_title {
+        margin-top: 30px;
+    }
+    .contrat_part {
+    padding: 0;
+    }
+    .c-icon {
+        padding: 20px 5px;
+    }
+}
+
+/* ========================================================
+768px
+=============================================================== */
+
+@media (max-width:768px){
+    .header_area i.bx{
+        color: #ffffff;
+    }   
+    .header_title h1{
+        font-size: 40px;
+    }
+    .header_descripcation p{
+        font-size: 18px;
+    }
+    .service-image img{
+        width: 40px;
+    }
+    .service-image img{
+        margin: 5px 0 10px 0;
+    }
+    .service-title h2{
+        font-size: 9px;
+    }
+    .service-des p{
+        font-size: 8px;
+    }
+    .oex_des p{
+        text-align: justify;
+        margin-right: 30px;
+    }
+    .oex_service .oex_describe p{
+        padding-right: 15px;
+    }
+    .expeart-image{
+        display: none;
+    }
+    .port_right img {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+    }
+    .p-container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about_con:nth-child(2) .row,
+    .about_con:nth-child(4) .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about_con .right,
+    .about_con .left {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .team_member_profile_name h2{
+        font-size: 15px;
+    }
+    .team_member_profile_post h3{
+        font-size: 13px;
+    }
+    .team_member_profile_icon a img {
+        width: 30px;
+        height: 30px;
+        margin: auto;
+    }
+    .team_footer p{
+        width: 90%;
+    }
+    .contrat_part{
+        padding-bottom: 15px;
+    }
+}
+
+
+/* ========================================================
+450px
+=============================================================== */
+
+@media (max-width:450px){
+   .header_area i.bx.bx-menu {
+        color: white;
+    }
+    .header_title h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .header_descripcation p {
+        margin-top: 15px;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .port_right{
+        position: relative;
+    }
+    .port_right img{
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+       
+    }
+    .port_example{
+        display: none;
+    }
+    ul{
+       transition: all .3s;
+    }
+    .service-header h1 {
+        font-size: 35px;
+    }
+    .service-section .row{
+        margin: 0 5px;
+    }
+    .service-section .divider {
+        margin-bottom: 15px;
+    }
+    .oex_des p{
+        text-align: justify;
+        margin-right: 15px;
+        /* padding-right: 15px; */
+    }
+    .oex_service .oex_describe p{
+        margin-right: 10px;
+    }
+    .oex_btn button {
+        width: 135px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .about_con:nth-child(2) .row,
+    .about_con:nth-child(4) .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about_con .right,
+    .about_con .left {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .port_title h1 {
+        font-size: 28px;
+    }
+    .port_title p{
+        padding: 0 20px !important;
+        padding-left: 0px !important;
+        font-size: 13px;
+    }
+    .port_catagory_title p {
+        font-size: 13px;
+    }
+    .team_member{
+        padding:0 15px ;
+    }
+    .team_member_profile .logo img{
+        width: 250px;
+        height: auto;
+    }
+  
+}
